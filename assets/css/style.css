@@ -10,18 +10,18 @@
 }
 
 .body {
-background-color: blue;
+background-color: grey;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
-    position: sticky;
     background-color: cadetblue;
   }
 
 .header a {
     text-decoration: none;
+    padding: 25px;
 }
 
 header nav ul {
@@ -32,14 +32,25 @@ header nav ul {
     list-style: none;
   }
 
-  header nav ul li a {
-      padding: 0 25px;
-
-  }
-
 .hero img {
     width: 100%;
 }
-  .contact {
-      background-color: darkgray;
-  }
+
+/* applications div */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.application {
+    border: 5px solid black;
+    width: 45%;
+    margin-bottom: 15px;
+    background-color: blue;
+    background-image: url();
+    background-size: contain;
+    background-position: center;
+    min-height: 250px;
+}
