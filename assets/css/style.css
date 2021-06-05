@@ -7,36 +7,86 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #24252A;
 }
 
-.body {
-background-color: grey;
+body {
+    color: rgba(0,136,169,0.8)
 }
-
+/* Header/Nav */
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: cadetblue;
+    align-items: center;
+    text-decoration: none;
+    background-color: black;
+    color: rgba(0,136,169,0.8);
+    padding: 30px 10%;
   }
 
-.header a {
-    text-decoration: none;
-    padding: 25px;
-}
+  header h1 a {
+      color: rgba(0,136,169,0.8);
+  }
 
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 25px 25px;
-    align-items: center;
+.nav-links {
     list-style: none;
   }
 
-.hero img {
+.nav-links li {
+      display: inline-block;
+      padding: 0 20px;
+  }
+
+  .nav-links li a {
+      transition: all 0.3s ease 0s;
+  }
+
+  .nav-links li a:hover {
+    color: #0088a9
+}
+
+button {
+    padding: 10px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition:  all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0,136,169,0.8);
+}
+
+.hero-container {
+    display: flex;
+
+}
+
+.profile-photo {
+
+}
+
+.profile-photo img {
+    max-width: 25%;
+    border-radius: 50%;
+}
+/* End Header/nav */
+
+/* Hero */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+/* end Hero */
+
+/* .hero img {
     width: 100%;
 }
 
-/* applications div */
+
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -48,9 +98,8 @@ header nav ul {
     border: 5px solid black;
     width: 45%;
     margin-bottom: 15px;
-    background-color: blue;
-    background-image: url();
+    background-image: url('../assets\images\placeholder.png');
     background-size: contain;
     background-position: center;
     min-height: 250px;
-}
+} */

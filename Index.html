@@ -10,73 +10,80 @@
 </head>
 
 <body>
+    <!-- nav -->
     <header class="header">
-        <h1>
-            <a href="">Portfolio</a>
-        </h1>
+        <h1>Mariah Eckrich</h1>
         <nav>
             <!-- Nav buttons: "about-me", "my work", "contact me"-->
-            <ul>
+            <ul class="nav-links">
                 <li>
-                    <a href="#about-me">About Me</a>
+                    <a href="#about-me"><button>About Me</button></a>
                 </li>
                 <li>
-                    <a href="#my-work">My Work</a>
+                    <a href="#my-work"><button>My Work</button></a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="#contact-me"><button>Contact Me</button></a>
                 </li>
             </ul>
         </nav>
     </header>
+    <!-- end nav -->
 
-    <section class="hero">
-        <img src="assets\images\Mariahs portfolio Picture.jpg" 
-    </section>
-
-
-        <section>
-            <h2>About Me</h2>
-            <!-- PHOTO OR AVATAR -->
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio numquam labore aspernatur? Aliquam
-                temporibus nulla repellat delectus, vero quos, placeat unde adipisci ipsa magni, incidunt maiores neque
-                inventore consequatur deserunt.
-            </p>
-        </section>
-
-        <section id="my-work">
-            <h2>My Work</h2>
-            <div class="flex-container">
-                <article class="application">
-                    <span>Card1</span>
-                </article>
-                <article class="application">
-                    <span>Card2</span>
-                </article>
-                <article class="application">
-                    <span>Card3</span>
-                </article>
-                <article class="application">
-                    <span>Card4</span>>
-                </article>
-                <article class="application">
-                    <span>Card5</span>
-                </article>
+    <!-- HERO/jumbotron -->
+    <section id="hero">
+        <div class="hero-container">
+            <div class="profile-photo">
+                <img src="assets\images\profile.png">
             </div>
-        </section>
+            <div class="info">
+                <h2>About Me</h2>
+                <p>
+                    I am working towards my certification as a full stack web developer in Cleveland, Ohio. Highly
+                    experienced in customer service, I will be able to curate your website to your exact needs and
+                    specifications.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end hero/jumbotron -->
 
-        <section class="contact">
-            <h2>Contact Me</h2>
-            <ul>
-                <li>m_eck12@outlook.com</li>
-                <li>216-513-4692</li>
-            </ul>
-        </section>
+    <!-- MY WORK SECTION -->
+    <section id="my-work">
+        <h2>My Work</h2>
+        <div class="flex-container">
+            <div class="application">
+                <span>Run Buddy</span>
+            </div>
+            <div class="application">
+                <span>Horiseon Business Marketing</span>
+            </div>
+            <div class="application">
+                <span>Card3</span>
+            </div>
+            <div class="application">
+                <span>Card4</span>
+            </div>
+            <div class="application">
+                <span>Card5</span>
+            </div>
+        </div>
+    </section>
+    <!-- END MY WORK SECTION -->
 
-        <footer>
-            <!-- Not sure whats going in here yet -->
-        </footer>
+    <!-- CONTACT ME SECTION -->
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <ul>
+            <li>m_eck12@outlook.com</li>
+            <li>216-513-4692</li>
+        </ul>
+    </section>
+    <!-- END CONTACT ME SECTION -->
+
+    <footer>
+        <!-- Not sure whats going in here yet -->
+    </footer>
 </body>
 
 </html>
