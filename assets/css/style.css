@@ -7,11 +7,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+
 }
 
 body {
-    color: rgba(0,136,169,0.8)
+    color: rgba(0,136,169,0.8);
+    background: url('..\assets\images\pexels-rakicevic-nenad-1274260.jpg') no-repeat center /cover;
 }
 /* Header/Nav */
 .header {
@@ -74,20 +75,22 @@ button:hover {
 /* End Header/nav */
 
 /* Hero */
+.hero {
+    display: flex;
+   
+}
 .hero-container {
     display: flex;
     justify-content: space-between;
 
 
+
 }
 /* end Hero */
 
-/* .hero img {
-    width: 100%;
-}
 
 
-.flex-container {
+/* .flex-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -102,4 +105,4 @@ button:hover {
     background-size: contain;
     background-position: center;
     min-height: 250px;
-} */
+}  */
