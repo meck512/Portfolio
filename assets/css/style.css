@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: rgba(33,135,147,1);
-    --secondary-color:rgba(27,31,34,); ;
+    --secondary-color:rgba(27,31,34,1); ;
     --third-color: rgba(184,104,94,1);
 }
 
@@ -18,8 +18,7 @@ body {
     flex-direction: column;
     min-height:100vh;
     color: var(--primary-color);
-    background: url(../images/space-jar.jpg);
-    background-size: contain;
+    background-color: var(--secondary-color);
 }
 /* Header/Nav */
 .header {
@@ -70,9 +69,15 @@ button:hover {
 /* Hero */
 .hero-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     background-color: rgb(27,31,34);
 }
-.profile-photo img {
+
+.info p {
+    flex-basis: 30%;
+}
+.profile-photo {
     max-width: 25%;
     border-radius: 50%;
 }
@@ -85,36 +90,36 @@ button:hover {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-end;
     width: 100%;
 }
 .application {
-    border: 5px solid black;
-    width: 45%;
-    margin-bottom: 15px;
+    border: 5px solid var(--third-color);
+    margin: 10px;
     background-size: contain;
     background-position: center;
     min-height: 250px;
+
 } 
 
-div.application:first-child {
-    flex-basis: 90%;
+.application:first-child {
+    flex-basis: 80%;
     background: url("../images/run-buddy-capture.png");
     background-size: cover;
 }
-div.application:nth-child(2) {
+.application:nth-child(2) {
     flex-basis: 40%;
     background: url("../images/horiseon-capture.PNG");
     background-size: cover;
 }
 
-div.application:nth-child(3) {
+.application:nth-child(3) {
     flex-basis: 40%;
     background: url("../images/placeholder.png");
     background-size: cover;
 }
 
-div.application:nth-child(4) {
+.application:nth-child(4) {
     flex-basis: 40%;
     background: url("../images/tash-sultana-capture.PNG");
     background-size: cover;
@@ -126,9 +131,24 @@ div.application:nth-child(5) {
     background-size: cover;
 }
 
-.info {
+
+.contact {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--primary-color);
+    margin: 20px;
+    padding: 20px 20px;
+}
+
+.contact a {
+    text-decoration: none;
+}
+.contact-links ul {
     list-style: none;
 }
 
+.contact-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
