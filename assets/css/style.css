@@ -82,15 +82,18 @@ button:hover {
 
 
 /* Projects Section */
-.projects-container {
+
+/* PARENT CONTAINER */
+section.projects {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: center;
+    flex-basis: 100%;
 }
+
+
 .application {
     border: 5px solid black;
-    width: 45%;
+    width: auto;
     margin-bottom: 15px;
     background-size: contain;
     background-position: center;
@@ -98,12 +101,12 @@ button:hover {
 } 
 
 div.application:first-child {
-    flex-basis: 90%;
+
     background: url("../images/run-buddy-capture.png");
     background-size: cover;
 }
 div.application:nth-child(2) {
-    flex-basis: 40%;
+flex-basis: 80%;
     background: url("../images/horiseon-capture.PNG");
     background-size: cover;
 }
