@@ -96,10 +96,27 @@ width: 100%;
     padding-right: 40px;
 }
 
+#about-me{
+display: flex;
+height: auto;
+width: 100%;
+justify-content: space-between;
+}
 
-#about-me .profile-photo {
+#about-me .section-title {
+align-content: flex-start;
+}
+
+#about-me .bio {
     max-width: 150px;
-    border-radius: 25%;
+    text-align: right;
+    margin: auto 0 auto auto;
+}
+#about-me .profile-photo {
+padding: 10px;
+max-width: 150px;
+border-radius: 25%;
+align-items: flex-end;
 }
 
 
