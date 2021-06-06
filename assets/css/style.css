@@ -11,8 +11,10 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
     color: rgba(0,136,169,0.8);
-    background: url('..\assets\images\pexels-rakicevic-nenad-1274260.jpg') no-repeat center /cover;
 }
 /* Header/Nav */
 .header {
@@ -77,32 +79,39 @@ button:hover {
 /* Hero */
 .hero {
     display: flex;
-   
 }
 .hero-container {
     display: flex;
     justify-content: space-between;
-
-
-
 }
 /* end Hero */
 
 
-
-/* .flex-container {
+/* Projects Section */
+.projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
 }
-
 .application {
     border: 5px solid black;
     width: 45%;
     margin-bottom: 15px;
-    background-image: url('../assets\images\placeholder.png');
     background-size: contain;
     background-position: center;
     min-height: 250px;
-}  */
+} 
+
+div.application:first-child {
+    flex-basis: 90%;
+    background: url("../images/placeholder.png");
+    background-size: cover;
+
+}
+div.application {
+    flex-basis: 40%;
+}
+
+
+
