@@ -15,6 +15,8 @@ body {
     flex-direction: column;
     min-height:100vh;
     color: rgba(0,136,169,0.8);
+    background: url(../images/space-jar.jpg);
+    background-size: contain;
 }
 /* Header/Nav */
 .header {
@@ -105,12 +107,31 @@ button:hover {
 
 div.application:first-child {
     flex-basis: 90%;
+    background: url("../images/run-buddy-capture.png");
+    background-size: cover;
+}
+div.application:nth-child(2) {
+    flex-basis: 40%;
+    background: url("../images/horiseon-capture.PNG");
+    background-size: cover;
+}
+
+div.application:nth-child(3) {
+    flex-basis: 40%;
     background: url("../images/placeholder.png");
     background-size: cover;
-
 }
-div.application {
+
+div.application:nth-child(4) {
     flex-basis: 40%;
+    background: url("../images/tash-sultana-capture.PNG");
+    background-size: cover;
+}
+
+div.application:nth-child(5) {
+    flex-basis: 40%;
+    background: url("../images/placeholder.png");
+    background-size: cover;
 }
 
 
