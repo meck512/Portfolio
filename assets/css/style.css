@@ -21,7 +21,7 @@ body {
     background-color: var(--secondary-color);
 }
 /* Header/Nav */
-.header {
+#header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,14 +32,14 @@ body {
     background-position: center;
     background-attachment: fixed;
     color: var(--primary-color);
-    padding: 20px 5%;
     z-index: 9999;
   }
 
-.header h1 {
-    margin: 0;
-    color: black;
-    background-color: var(--primary-color);
+#header h1.header-title {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding-left: 20%;
+    margin-top: 20px ;
   }
 .nav-links {
     list-style: none;
@@ -59,16 +59,19 @@ body {
 }
 
 button {
+    font-weight: bolder;
     padding: 10px 25px;
     background-color: var(--primary-color);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition:  all 0.3s ease 0s;
+
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
+    background-color: var(--primary-color);
+    opacity: 0.75;
 }
 
 /* About Me */
@@ -81,9 +84,6 @@ height: auto;
 width: 100%;
 }
 
-#hero .hero-content .section-title {
-    
-}
 #hero .hero-content {
     display: flex;
     justify-content: flex-end;
@@ -99,13 +99,17 @@ width: 100%;
 #about-me{
 display: flex;
 height: auto;
-width: 100%;
+width: 90%;
 justify-content: space-between;
 }
 
-#about-me .section-title {
+#about-me h2.section-title  {
+width: 15%;
+    height: auto;
 align-content: flex-start;
+border-right: 2px solid var(--primary-color);
 }
+
 
 #about-me .bio {
     max-width: 150px;
@@ -115,7 +119,6 @@ align-content: flex-start;
 #about-me .profile-photo {
 padding: 10px;
 max-width: 150px;
-border-radius: 25%;
 align-items: flex-end;
 }
 
@@ -129,58 +132,78 @@ align-items: flex-end;
 
 
 /* Projects Section */
+#projects {
+display: flex;
+height: auto;
+width: 90%;
+justify-content: space-between;
+}
+
+#projects h2.projects-title {
+width: 15%;
+    height: auto;
+align-content: flex-start;
+border-right: 2px solid var(--primary-color);
+}
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    width: 100%;
+    justify-content: space-between;
 }
 .application {
-    border: 5px solid var(--third-color);
-    margin: 10px;
+    border: 2px solid var(--primary-color);
     background-size: contain;
     background-position: center;
-    min-height: 250px;
+    margin-bottom: 10px;
 
 } 
 
 .application:first-child {
-    flex-basis: 80%;
+    flex: 0 1 100%;
     background: url("../images/run-buddy-capture.png");
     background-size: cover;
+    min-height: 250px;
 }
 .application:nth-child(2) {
-    flex-basis: 40%;
+    flex: 0 0.5 49%;
     background: url("../images/horiseon-capture.PNG");
     background-size: cover;
+    min-height: 150px;
 }
 
 .application:nth-child(3) {
-    flex-basis: 40%;
+    flex: 0 0.5 49%;
     background: url("../images/placeholder.png");
     background-size: cover;
+    min-height: 150px;
 }
 
 .application:nth-child(4) {
-    flex-basis: 40%;
+    flex: 0 0.5 49%;
     background: url("../images/tash-sultana-capture.PNG");
     background-size: cover;
+    min-height: 150px;
 }
 
 div.application:nth-child(5) {
-    flex-basis: 40%;
+    flex: 0 0.5 49%;
     background: url("../images/placeholder.png");
     background-size: cover;
+    min-height: 150px;
 }
 
 
-.contact {
+#contact {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    color: var(--primary-color);
-    margin: 20px;
-    padding: 20px 20px;
+    height: auto;
+    width: 90%;
+}
+#contact h2.contact-title {
+    width: 15%;
+    height: auto;
+    align-content: flex-start;
+    border-right: 2px solid var(--primary-color);
 }
 
 .contact a {
