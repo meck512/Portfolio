@@ -11,4 +11,4 @@ Welcome to my portfolio. As this is my first full website from scratch using HTM
 <img src=assets\images\Screenshot-final.png/>
 
 <h2>Link to deployed application:</h2>
-<p></p>
+<p>https://meck512.github.io/Portfolio/</p>
