@@ -1,80 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
 :root {
-    --primary-color: rgba(33,135,147,1);
-    --secondary-color:rgba(27,31,34,1); ;
-    --third-color: rgba(216,220,219,1);
+--primary-color: rgba(33,135,147,1);
+--secondary-color:rgba(27,31,34,1); ;
+--third-color: rgba(216,220,219,1);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Rubik;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Rubik;
 }
 
 #background {
-    background-image: url(../images/space-jar.jpg);
-    background-size: 100%;
-    background-position: 20% 50%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-width: 100%;
-    min-height: 100%;
-
+background-image: url(../images/space-jar.jpg);
+background-size: 100%;
+background-position: 20% 50%;
+background-attachment: fixed;
+background-repeat: no-repeat;
+min-width: 100%;
+min-height: 100%;
 }
 
-.flex-box {
-    background-color: var(--secondary-color);
-    opacity: 0.85;
-    font-weight: bold;
+.trans-bg {
+background-color: var(--secondary-color);
+opacity: 0.85;
+font-weight: bold;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    color: var(--primary-color);
+display: flex;
+flex-direction: column;
+color: var(--primary-color);
 }
 /* /* Header/Navigation Style */
 #header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    position: sticky;
-    text-decoration: none;
-    height: auto;
-  }
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;
+position: sticky;
+text-decoration: none;
+height: auto;
+}
 
 #header h1.header-title {
 color: var(--primary-color);
 flex: 2 2 auto;
-  }
+}
 
 #header .nav-links {
-    list-style: none;
-    flex: 8 8 auto;
-  }
+list-style: none;
+flex: 8 8 auto;
+}
 
 #header .nav-links li {
-      display: inline-block;
-      padding: 20px 20px;
-  }
+display: inline-block;
+padding: 20px 20px;
+}
 
 /* All Button Styles */
 button {
-    font-weight: bolder;
-    padding: 10px 25px;
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition:  all 0.3s ease 0s;
+font-weight: bolder;
+padding: 10px 25px;
+background-color: var(--primary-color);
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition:  all 0.3s ease 0s;
 }
 
 button:hover {
-    background-color: var(--primary-color);
-    opacity: 0.75;
+background-color: var(--primary-color);
+opacity: 0.75;
 }
 
 /* Hero Style */
@@ -119,15 +118,17 @@ flex-basis: 20%;
 flex-basis: 40%;
 text-align: right;
 color: var(--third-color);
+margin: auto;
 }
 
 #about-me .profile-photo {
 flex-basis: 40%;
 max-width: 150px;
 align-items: flex-end;
-border: 2px solid var(--primary-color);
+border: 2px solid var(--third-color);
 margin: 10px 0 10px 10px;
 }
+
 
 /* Projects Style */
 #projects {
@@ -175,7 +176,6 @@ background-size: cover;
 min-height: 250px;
 }
 
-
 .application:nth-child(2) {
 flex: 0 0.5 49%;
 background: url("../images/horiseon-capture.PNG");
@@ -185,7 +185,7 @@ min-height: 150px;
 
 .application:nth-child(3) {
 flex: 0 0.5 49%;
-background: url("../images/placeholder.png");
+background: url("../images/robot-gladiators-capture.png");
 background-size: cover;
 min-height: 150px;
 }
@@ -199,7 +199,7 @@ min-height: 150px;
 
 .application:nth-child(5) {
 flex: 0 0.5 49%;
-background: url("../images/placeholder.png");
+background: url("../images/password-generator-capture.PNG");
 background-size: cover;
 min-height: 150px;
 }
@@ -227,19 +227,4 @@ list-style: none;
 .contact-links li {
 display: inline-block;
 }
-
-@media screen and (max-width: 980px) {
-
-}
-
-/* MEDIA QUERY FOR TABLETS AND SMALLER */
-@media screen and (max-width: 768px) {
-
-}
-
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
-
-}
-
 
