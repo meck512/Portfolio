@@ -8,7 +8,7 @@ Welcome to my portfolio. As this is my first full website from scratch using HTM
 
 <h2>Screenshot:</h2>
 
-<img src=assets\images\Screenshot-final.png/>
+<img src="assets\images\Screenshot-final.jpg"/>
 
 <h2>Link to deployed application:</h2>
 <p>https://meck512.github.io/mariah-eckrich-portfolio/</p>
