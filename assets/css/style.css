@@ -192,14 +192,14 @@ min-height: 150px;
 
 .application:nth-child(4) {
 flex: 0 0.5 49%;
-background: url("../images/tash-sultana-capture.PNG");
+background: url("../images/tash-sultana-capture.png");
 background-size: cover;
 min-height: 150px;
 }
 
 .application:nth-child(5) {
 flex: 0 0.5 49%;
-background: url("../images/password-generator-capture.PNG");
+background: url("../images/password-generator-capture.png");
 background-size: cover;
 min-height: 150px;
 }
