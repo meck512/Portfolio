@@ -178,7 +178,7 @@ min-height: 250px;
 
 .application:nth-child(2) {
 flex: 0 0.5 49%;
-background: url("../images/horiseon-capture.PNG");
+background: url("../images/horiseon-capture.png");
 background-size: cover;
 min-height: 150px;
 }
