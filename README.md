@@ -8,7 +8,7 @@ Welcome to my portfolio. As this is my first full website from scratch using HTM
 
 <h2>Screenshot:</h2>
 
-<img url="..assets/images/Screenshot-final.png">
+<img src=assets\images\Screenshot-final.png/>
 
 <h2>Link to deployed application:</h2>
 <p></p>
