@@ -7,41 +7,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Portfolio - Mariah Eckrich</title>
+    <!-- background img & transparent solid backgrounds-->
 </head>
 
-<body>
-    <!-- nav -->
-    <header id="header">
-        <h1 class="header-title">Meck512</h1>
+<body id="background">
+    <!-- Headder/Navigation Section ID-->
+    <header id="header" class="flex-box">
+        <h1 class="header-title">Welcome</h1>
         <nav>
-            <!-- Nav buttons: "about-me", "my work", "contact me"-->
             <ul class="nav-links">
                 <li>
                     <a href="#about-me"><button>About Me</button></a>
                 </li>
                 <li>
-                    <a href="#my-work"><button>My Work</button></a>
+                    <a href="#projects"><button>Projects</button></a>
                 </li>
                 <li>
-                    <a href="#contact-me"><button>Contact Me</button></a>
+                    <a href="#contact"><button>Contact Me</button></a>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- end nav -->
 
-    <!-- HERO -->
+    <!-- HERO Section ID -->
     <section id="hero">
 
         <div class="hero-content">
             <p class="description">
-                I'm Mariah
+                Mariah Eckrich
             </p>
         </div>
     </section>
-    <!-- end hero/jumbotron -->
 
-    <section id="about-me">
+    <!-- About Me Section ID -->
+    <section id="about-me" class="flex-box">
         <h2 class="section-title">About Me</h2>
         <p class="bio">
             I am working towards my certification as a full stack web developer in Cleveland, Ohio.
@@ -50,29 +49,30 @@
     </section>
 
 
-    <!-- MY WORK SECTION -->
-    <section id="projects">
+    <!-- Projects Section ID-->
+    <section id="projects" class="flex-box">
         <h2 class="projects-title">Projects</h2>
         <div class="projects-container">
-            <div class="application">
-                <span>Run Buddy</span>
-            </div>
-            <div class="application">
-                <span>Horiseon Business Marketing</span>
-            </div>
-            <div class="application">
-                <span>Robot Gladiators</span>
-            </div>
-            <div class="application">
-                <span>Tash Sultana Fanpage</span>
-            </div>
-            <div class="application">
-                <span>Card5</span>
-            </div>
+            <a href="https://meck512.github.io/run-buddy/" class="application">
+                <span class="ribbon">Run Buddy</span>
+            </a>
+            <a href="https://meck512.github.io/Horiseon_Business_Marketing/" class="application">
+                <span class="ribbon">Horiseon Business Marketing</span>
+            </a>
+            <a href="https://meck512.github.io/robot-gladiators/" class="application">
+                <span class="ribbon">Robot Gladiators</span>
+            </a>
+            <a href="https://meck512.github.io/tash-sultana-fanpage/" class="application">
+                <span class="ribbon">Tash Sultana Fanpage</span>
+            </a>
+            <a href="" class="application">
+                <span class="ribbon">Card5</span>
+            </a>
         </div>
     </section>
-    <!-- CONTACT ME SECTION -->
-    <section id="contact">
+
+    <!-- Contact Me Section ID -->
+    <section id="contact" class="flex-box">
         <h2 class="contact-title">Contact Me</h2>
         <div class="contact-links">
             <ul>
@@ -88,11 +88,6 @@
             </ul>
         </div>
     </section>
-    <!-- END CONTACT ME SECTION -->
-
-    <footer>
-        <!-- Not sure whats going in here yet -->
-    </footer>
 </body>
 
 </html>
