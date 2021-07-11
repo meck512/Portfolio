@@ -171,35 +171,35 @@ color: var(--third-color);
 
 .application:first-child {
 flex: 0 1 100%;
-background: url("../images/Run-buddy-capture.jpg");
+background: url("../images/screenshot.png");
 background-size: cover;
 min-height: 250px;
 }
 
 .application:nth-child(2) {
-flex: 0 0.5 49%;
-background: url("../images/Horiseon-capture.jpg");
+flex: 0 0.5 49%; 
+background: url("../images/Run-buddy-capture.jpg");
 background-size: cover;
 min-height: 150px;
 }
 
 .application:nth-child(3) {
 flex: 0 0.5 49%;
-background: url("../images/Robot-gladiators-capture.jpg");
+background: url("../images/Horiseon-capture.jpg");
 background-size: cover;
 min-height: 150px;
 }
 
 .application:nth-child(4) {
 flex: 0 0.5 49%;
-background: url("../images/Tash-sultana-capture.jpg");
+background: url("../images/Robot-gladiators-capture.jpg");
 background-size: cover;
 min-height: 150px;
 }
 
 .application:nth-child(5) {
 flex: 0 0.5 49%;
-background: url("../images/Password-generator-capture.jpg");
+background: url("../images/Tash-sultana-capture.jpg");
 background-size: cover;
 min-height: 150px;
 }
