@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+:root {
+--primary-color: rgba(33,135,147,1);
+--secondary-color:rgba(27,31,34,1); ;
+--third-color: rgba(216,220,219,1);
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family: Rubik;
+}
+
+#background {
+background-image: url(../images/space-jar.jpg);
+background-size: 100%;
+background-position: 20% 50%;
+background-attachment: fixed;
+background-repeat: no-repeat;
+min-width: 100%;
+min-height: 100%;
+}
+
+.trans-bg {
+background-color: var(--secondary-color);
+opacity: 0.85;
+font-weight: bold;
+}
+
+body {
+display: flex;
+flex-direction: column;
+color: var(--primary-color);
+}
+/* /* Header/Navigation Style */
+#header {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+align-items: center;
+position: sticky;
+text-decoration: none;
+height: auto;
+}
+
+#header h1.header-title {
+color: var(--primary-color);
+flex: 2 2 auto;
+}
+
+#header .nav-links {
+list-style: none;
+flex: 8 8 auto;
+}
+
+#header .nav-links li {
+display: inline-block;
+padding: 20px 20px;
+}
+
+/* All Button Styles */
+button {
+font-weight: bolder;
+padding: 10px 25px;
+background-color: var(--primary-color);
+border: none;
+border-radius: 50px;
+cursor: pointer;
+transition:  all 0.3s ease 0s;
+}
+
+button:hover {
+background-color: var(--primary-color);
+opacity: 0.75;
+}
+
+/* Hero Style */
+#hero {
+background-image: url(../images/space-jar.jpg);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+height: auto;
+flex-basis: 100%;
+}
+
+#hero .hero-content {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+min-height: 400px;
+}
+
+#hero .hero-content .description {
+background-color: var(--secondary-color);
+font-size: 50px;
+margin: 25% 0 0 0;
+}
+
+/* About-Me Style */
+#about-me{
+display: flex;
+height: auto;
+justify-content: space-between;
+flex-basis: 100%;
+}
+
+#about-me h2.section-title  {
+height: auto;
+align-content: flex-start;
+border-right: 2px solid var(--primary-color);
+flex-basis: 20%;
+}
+
+#about-me .bio {
+flex-basis: 40%;
+text-align: right;
+color: var(--third-color);
+margin: auto;
+}
+
+#about-me .profile-photo {
+flex-basis: 40%;
+max-width: 150px;
+align-items: flex-end;
+border: 2px solid var(--third-color);
+margin: 10px 0 10px 10px;
+}
+
+
+/* Projects Style */
+#projects {
+display: flex;
+height: auto;
+justify-content: space-between;
+flex-basis: 100%;
+}
+
+h2.projects-title {
+height: auto;
+align-content: flex-start;
+border-right: 2px solid var(--primary-color);
+flex-basis: 20%;
+}
+
+#projects .projects-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+flex-basis: 70%;
+}
+
+#projects .projects-container .application {
+border: 2px solid var(--primary-color);
+margin-bottom: 10px;
+position: relative;
+} 
+
+#projects .application span.ribbon {
+background-color: var(--secondary-color);
+color: var(--primary-color);
+position: absolute;
+bottom: 0;
+width: 100%;
+text-align: center;
+font-size: large;
+color: var(--third-color);
+}
+
+.application:first-child {
+flex: 0 1 100%;
+background: url(../images/front-page.PNG);
+background-size: cover;
+min-height: 250px;
+}
+
+.application:nth-child(2) {
+flex: 0 0.5 49%; 
+background: url("../images/screenshot.png");
+background-size: cover;
+min-height: 150px;
+}
+
+.application:nth-child(3) {
+flex: 0 0.5 49%;
+background: url(../images/Run-buddy-capture.jpg);
+background-size: cover;
+min-height: 150px;
+}
+
+.application:nth-child(4) {
+flex: 0 0.5 49%;
+background: url("../images/Horiseon-capture.jpg");
+background-size: cover;
+min-height: 150px;
+}
+
+.application:nth-child(5) {
+flex: 0 0.5 49%;
+background: url("../images/Tash-sultana-capture.jpg");
+background-size: cover;
+min-height: 150px;
+}
+
+/* Contact Me Section */
+#contact {
+display: flex;
+height: auto;
+justify-content: space-between;
+flex-basis: 100%;
+}
+
+#contact h2.contact-title {
+height: auto;
+align-content: flex-start;
+border-right: 2px solid var(--primary-color);
+flex-basis: 20%;
+position: sticky;
+}
+
+#contact .contact-links ul {
+list-style: none;
+}
+
+.contact-links li {
+display: inline-block;
+}
+
